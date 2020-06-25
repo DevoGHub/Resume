@@ -11,6 +11,17 @@ p{
   margin-top:6px;
   margin-bottom:6px;
   color:rgba(255,255,255,0.7);
+  text-align: justify;
+}
+
+caption{
+  caption-side: top !important;
+  text-align: center !important;
+}
+
+table{
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 /*Class Based Styling*/
@@ -79,6 +90,10 @@ p{
   border: 1px solid #000;
 }
 
+.mainPageDiv{
+  display:block;
+}
+
 /*Identifier based Styling*/
 #profilepic{
   width:80%;
@@ -87,12 +102,14 @@ p{
   margin-top: 10px;
   margin-right: 10%;
   margin-left: 10%;
+  border: solid rgba(255,255,255,0.8) 5px;
 }
 
 #coverpic{
   width:100%;
   display:inline-block;
   border-bottom: 5px solid rgb(19, 15, 26);
+  border: solid rgba(150,200,255,0.8) 5px;
   /*padding-left: 10px:
   margin-left:10px;*/
   /*border: solid white 0px; */
@@ -117,7 +134,7 @@ p{
 }
 
 #facebook{
-  width:13px;
+  width:12px;
 }
 
 #name{
@@ -147,10 +164,10 @@ p{
   font-size: 135%;
 }
 
+
+/*Over writes*/
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .navBar {padding-top: 15px;}
   .navBar a {font-size: 18px;}
 }
-
-/*Over writes*/

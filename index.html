@@ -12,26 +12,25 @@
 
 <!--Body-->
   <body>
-
     <div class='navBar'>
       <div class="personalInfo">
         <img id='profilepic' src="imgs/profilepic.jpg" alt="My picture"/>
         <p id="nameNavBar">Devjyot Singh Sidhu</p>
         <p id="proTitle">Web Developer | App Developer | ML Scientist | Speedcuber | Content Writer</p>
         <nav>
-          <p class='navList'>About Me</p>
+          <a href='#aboutMe'><p class='navList'>About Me</p></a>
           <hr class='navListHR'>
-          <p class='navList'>Education</p>
+          <a href='#education'><p class='navList'>Education</p></a>
           <hr class='navListHR'>
-          <p class='navList'>Certifications</p>
+          <a href='#workExperience'><p class='navList'>Work Experience</p></a>
           <hr class='navListHR'>
-          <p class='navList'>Work Experience</p>
+          <a href='#skills'><p class='navList'>Skills</p></a>
           <hr class='navListHR'>
-          <p class='navList'>Projects</p>
+          <a href='#certifications'><p class='navList'>Certifications</p></a>
           <hr class='navListHR'>
-          <p class='navList'>Achievements</p>
+          <a href='#projects'><p class='navList'>Projects</p></a>
           <hr class='navListHR'>
-          <p class='navList'>Contact Me</p>
+          <a href='#contactMe'><p class='navList'>Contact Me</p></a>
         </nav>
         <div class='socialTray'>
           <a href="https://github.com/DevoGHub" target='_blank'><img class='social' src='imgs/github.svg'/></a>
@@ -43,23 +42,208 @@
       </div>
     </div>
     <div class="mainPage">
-      <div class='aboutMe'>
+      <div id='aboutMe' class='mainPageDiv'>
         <img src="imgs/coverpic_copy.jpg" id='coverpic' alt="My Picture" style="width:100%">
       	<p id="name">Devjyot Singh Sidhu</p>
       	<p id="bio">
           Hi, I'm Devjyot Singh Sidhu and I hail from the capital city of India, New Delhi. I'm an enthusiastic learner and an extremely big fan of technology. I've got quite a few ambitions in life,
           the main one being to become an expert in the field of Machine Learning and then to use it to acheive something big for the betterment of the mankind. Apart from ML, my interests within the IT Industry include Application Development, Web Development, Data Visualisation
-          and Competitive Coding. Apart from IT, I am also a speedcuber, a lover of mathematics and music, a partime content writer and an entrepreneur who has the
+          and Competitive Coding. Apart from IT, I am also a speedcuber, a lover of mathematics, music, cooking and baking, a partime content writer and an entrepreneur who has the
           dream to provide freelance developers a platform to showcase their talents at extremely low or in some cases no costs.
         </p>
       	<hr id="afterName">
       	<!-- <pre id="mainTitle">VIT, Vellore  |  New Delhi  |  DPS</pre> -->
-      	<i class="fas fa-map-marker-check" ></i>
+        <p><a href='docs/Resume.pdf' target='_blank'>View Resume</a></p>
+        <i class="fas fa-map-marker-check" ></i>
         <ul class="fa-ul">
             <li><i class="fa-li fa fa-check-square"></i>VIT, Vellore</li>
             <li><i class="fa-li fa fa-spinner fa-spin"></i>New Delhi</li>
             <li><i class="fa-li fa fa-square"></i>DPS</li>
         </ul>
-    </div>
+     </div>
+     <div id="education" class='mainPageDiv'>
+      <p class='sectionHeader'>My Education</p>
+        <table>
+          <tr>
+            <th>Institute</th>
+            <th>Degree</th>
+            <th>Year of Completion</th>
+            <th>Score</th>
+          </tr>
+          <tr>
+            <td>Vellore Institute of Technology, Vellore</td>
+            <td>B.Tech in Computer Science and Engineering</td>
+            <td>2022</td>
+            <td><i>Currently enrolled</i></td>
+          </tr>
+          <tr>
+            <td>Amity International School, Noida</td>
+            <td>Senior Secondary/ High School</td>
+            <td>2018</td>
+            <td>94%</td>
+          </tr>
+          <tr>
+            <td>Pragyan School, Greater Noida</td>
+            <td>Senior/ Junior High School</td>
+            <td>2016</td>
+            <td>9.8( CGPA out of 10)</td>
+          </tr>
+        </table>
+     </div>
+     <div id="workExperience" class='mainPageDiv'>
+      <p class='sectionHeader'>My Work Experience</p>
+      <details>
+        <summary>DevUS</summary>
+        <p>
+          Founded this organisation/ company with the vision of providing freelance developers a platform
+          to showcase their skills and talent at extremely low or no expenditure.
+        </p>
+        <p>
+          Joined as Founder/ President in June, 2020 and am stll working here at the same post.
+        </p>
+      </details>
+      <details>
+        <summary>The Next Chapter - VIT</summary>
+        <p>
+          Joined as a management recruit in the club and helped in hosting several events since then.
+          I was soon after my joining placed in the Editorial and Operations Teams as well.
+        </p>
+        <p>
+          Joined as Management Recruit in December, 2019 and still working with them under Management, Editorial and Operations Teams.
+        </p>
+      </details>
+      <details>
+        <summary>C.U.B.E - VIT</summary>
+        <p>
+          Joined as a management recruit in the club and since then have helped in conducting and hosting a lot of events.
+          Was also given a place in the cubing enthusiasts' team due to my speedcubing skills.
+        </p>
+        <p>
+          Joined as a Management recruit in December, 2019 and still a part of the Management and Cubing Enthusisasts' Teams.
+        </p>
+      </details>
+      <details>
+        <summary>Technoholicplus</summary>
+        <p>
+          Joined as a content writing intern and wrote a number of technology related articles and blogs for the company.
+        </p>
+        <p>
+          Joined in December, 2019 and left after completing the internship in February, 2019
+        </p>
+        <p>
+          Refernce link for the same is provided <a href='https://internshala.com/student/certificate/31814308/D49A0675-903E-0308-05C5-A8E17E1FD643' target='_blank'>here</a>.
+        </p>
+      </details>
+      <details>
+        <summary>CodeChef - VIT</summary>
+        <p>
+          Joined the chapter as a Technical Recruit and was soon also placed in the Management team. Helped in hosting and conducting a flagship event and
+          innumerous online events.
+        </p>
+        <p>
+          Joined the chapter as a technical recruit in December, 2018 and left the chapter in August, 2019
+        </p>
+      </details>
+     </div>
+     <div id="skills" class='mainPageDiv'>
+      <p class='sectionHeader'>My Skills</p>
+      <ul>
+        <li>Python 3 <progress value="3" max="3"></progress></li>
+        <li>JAVA <progress value="2" max="3"></progress></li>
+        <li>C and C++ <progress value="2" max="3"></progress></li>
+        <li>SQL and MySQL <progress value="3" max="3"></progress></li>
+        <li>Git Version Control Systems and GitHub <progress value="2" max="3"></progress></li>
+        <li>Web Development Frontend <progress value="2" max="3"></progress></li>
+        <li>Web Development Backend <progress value="1" max="3"></progress></li>
+        <li>Machine Learning <progress value="2" max="3"></progress></li>
+        <li>Data Structures <progress value="2" max="3"></progress></li>
+        <li>Android Application Development <progress value="2" max="3"></progress></li>
+        <li>iOS Application Development <progress value="1" max="3"></progress></li>
+        <li>Microsoft Office Tools <progress value="2" max="3"></progress></li>
+        <li>English (Spoken) <progress value="3" max="3"></progress></li>
+        <li>English (Written) <progress value="3" max="3"></progress></li>
+        <li>Hindi (Spoken) <progress value="3" max="3"></progress></li>
+        <li>Hindi (Written) <progress value="2" max="3"></progress></li>
+        <li>Speedcubing <progress value="2" max="3"></progress></li>
+        <li>Content Writer <progress value="3" max="3"></progress></li>
+        <li>Aptitude and Soft Skills <progress value="3" max="3"></progress></li>
+      </ul>
+     </div>
+     <div id="certifications" class='mainPageDiv'>
+      <p class='sectionHeader'>
+        My Certifications from Various Online Courses
+      </p>
+      <p>
+        <a href="https://www.coursera.org/account/accomplishments/certificate/BADJTPT4E2RA" target='_blank'>Coursera Introduction to HTML5</a>
+        <br>
+        <a href="https://www.coursera.org/account/accomplishments/certificate/GDQXCLGSYG8L" target='_blank'>Coursera Introduction to Git and GitHub</a>
+        <br>
+        <a href="https://www.coursera.org/account/accomplishments/certificate/SUWDXSB92TP5" target='_blank'>Coursera Python Programming Essentials</a>
+        <br>
+        <a href="http://www.vitol.ac.in/certificates/faec1b26cb7b47278b42aaa25016abbd" target='_blank'>VITOL Marketing Management</a>
+        <br>
+        <a href="http://www.vitol.ac.in/certificates/92d176ebfc4e43a09a66ea891a2d7f97" target='_blank'>VITOL Business Mathematics</a>
+        <br>
+        <a href="http://www.vitol.ac.in/certificates/7d26be4d76d54aeb81ca4d72f23964ed" target='_blank'>VITOL Funtional French</a>
+      </p>
+     </div>
+     <div id="projects" class='mainPageDiv'>
+      <p class='sectionHeader'>
+        My Projects
+      </p>
+      <details>
+        <summary><a href='https://github.com/DevoGHub/Resume' target='_blank'>Resume Website</a></summary>
+        <p>
+          This project is the current website you are viewing. This was created as an intial project for DevUs as a test site.
+          The website is reachable at <a href='http://www.devjyotsinghsidhu.devus.org' target='_blank'>devjyotsinghsidhu.devus.org</a>.
+        </p>
+      </details>
+      <details>
+        <summary><a href='https://github.com/DevUs-org/Coobby' target='_blank'>Coobby</a></summary>
+        <p>
+          This website was the first dynamic website under DevUs and is a collection of 100+ recipes out of which many have been created by my family members and me.
+          The website is reachable at <a href='http://www.coobby.devus.org' target='_blank'>coobby.devus.org</a>.
+        </p>
+      </details>
+      <details>
+        <summary><a href='https://github.com/DevUs-org/DevUs' target='_blank'>DevUs</a></summary>
+        <p>
+          This is the main website of DevUs and is reachable the main domain <a href="http://www.devus.org" target='_blank'>devus.org</a>. The website contains all the information one may need to become
+          a part of the organisation with all the features, Terms of Conditions Agreements and pricing.
+        </p>
+      </details>
+      <details>
+        <summary><a href='https://github.com/DevUs-org/RuleYourMoney' target='_blank'>Rule Your Money</a></summary>
+        <p>
+          The first mobile application project of DevUs. It is intented to be a personal finance and budget managing application.
+        </p>
+      </details>
+      <details>
+        <summary><a href='https://github.com/DevoGHub/eWallet-Applet' target='_blank'>e-Wallet Applet</a></summary>
+        <p>
+          This application was created by me as a class 12th final project. It uses jForms and MysQL to acheive the task.
+        </p>
+      </details>
+      <details>
+        <summary><a href='https://github.com/DevoGHub/Calculator-Applet' target='_blank'>Scientific Calculator</a></summary>
+        <p>
+          This was personally my first ever full project. It is written in Java and is a very basic scientific calculator.
+        </p>
+      </details>
+     </div>
+     <div id="contactMe" class='mainPageDiv'>
+      <p class='sectionHeader'>
+        Contact me
+      </p>
+      <p id='contactMePara'>
+        Phone: <a href="tel:+919818911553">+91981891553</a>
+        <br>
+        Email: <a href="mailto:devjyotsinhsidhu@gmail.com" target='_blank'>devjyotsinhsidhu@gmail.com</a>
+      </p>
+     </div>
+     <div id='footer' class="mainPageDiv">
+      <p class='footerPara'>Developed by <a href='mailto:manaswini.mahala@devus.org' target='_blank'>Manaswini Mahala</a> and <a href='mailto:devjyotsingh.sidhu@devus.org' target='_blank'>Devjyot Singh Sidhu</a> as a project under <a href='http://wwww.devus.org' target='_blank'>DevUS</a>.</p>
+     </div>
+  </div>
   </body>
 </html>

@@ -205,9 +205,39 @@ details[open] summary:before{
   color: rgba(135, 145, 255,0.6);
 }
 
+.link2{
+  color: rgb(109, 201, 237);
+  font-size: 120%;
+  font-family: 'verdana';
+
+}
+.link2:hover{
+  color: rgba(135, 145, 255,0.6);
+}
+
+.link3{
+  color: rgb(75, 32, 231);
+
+}
+
+
+
 .li2{
   list-style-type: none;
 }
+
+.footerPara{
+  /*border-top: 22px solid rgb(19, 15, 26);*/
+  padding-top: 6%;
+  font-size: 110%;
+  text-align: center;
+  font-family: verdana;
+  color: rgb(180, 206, 224);
+
+  
+}
+
+
 
 
 
@@ -335,8 +365,8 @@ progress[value]::-moz-progress-bar {
     position: absolute; right:0;
 }
 
-.html5::-webkit-progress-value,
-.python::-webkit-progress-value  {
+
+/*.color1::-webkit-progress-value{
 
     background-image:
     -webkit-linear-gradient( 135deg,
@@ -351,8 +381,7 @@ progress[value]::-moz-progress-bar {
      -webkit-linear-gradient( left, #09c, #f44);
 }
 
-.css3::-webkit-progress-value,
-.php::-webkit-progress-value
+.color2::-webkit-progress-value
 {
 
     background-image:
@@ -368,8 +397,7 @@ progress[value]::-moz-progress-bar {
      -webkit-linear-gradient( left, #09c, #ff0);
 }
 
-.jquery::-webkit-progress-value,
-.node-js::-webkit-progress-value
+.color3::-webkit-progress-value
 {
 
     background-image:
@@ -383,6 +411,166 @@ progress[value]::-moz-progress-bar {
                                                         rgba(255, 255, 255, .25),
                                                         rgba(0,0,0,.2)),
      -webkit-linear-gradient( left, #09c, #690);
+}*/
+
+
+.color1::-webkit-progress-value{
+
+    background-image:
+    -webkit-linear-gradient( 135deg,
+                                                     transparent,
+                                                     transparent 33%,
+                                                     rgba(0,0,0,.1) 33%,
+                                                     rgba(0,0,0,.1) 66%,
+                                                     transparent 66%),
+    -webkit-linear-gradient( top,
+                                                        rgba(255, 255, 255, .25),
+                                                        rgba(0,0,0,.2)),
+     -webkit-linear-gradient( left, #eb0000, #f29129);
+}
+
+.color2::-webkit-progress-value
+{
+
+    background-image:
+    -webkit-linear-gradient( 135deg,
+                                                     transparent,
+                                                     transparent 33%,
+                                                     rgba(0,0,0,.1) 33%,
+                                                     rgba(0,0,0,.1) 66%,
+                                                     transparent 66%),
+    -webkit-linear-gradient( top,
+                                                        rgba(255, 255, 255, .25),
+                                                        rgba(0,0,0,.2)),
+     -webkit-linear-gradient( left, #ff7105, #ffee00);
+}
+
+.color3::-webkit-progress-value
+{
+
+    background-image:
+    -webkit-linear-gradient( 135deg,
+                                                     transparent,
+                                                     transparent 33%,
+                                                     rgba(0,0,0,.1) 33%,
+                                                     rgba(0,0,0,.1) 66%,
+                                                     transparent 66%),
+    -webkit-linear-gradient( top,
+                                                        rgba(255, 255, 255, .25),
+                                                        rgba(0,0,0,.2)),
+     -webkit-linear-gradient( left, #ffee00, #8cff00);
+}
+
+.color4::-webkit-progress-value
+{
+
+    background-image:
+    -webkit-linear-gradient( 135deg,
+                                                     transparent,
+                                                     transparent 33%,
+                                                     rgba(0,0,0,.1) 33%,
+                                                     rgba(0,0,0,.1) 66%,
+                                                     transparent 66%),
+    -webkit-linear-gradient( top,
+                                                        rgba(255, 255, 255, .25),
+                                                        rgba(0,0,0,.2)),
+     -webkit-linear-gradient( left, #8cff00, #00d43f);
+}
+
+.color5::-webkit-progress-value
+{
+
+    background-image:
+    -webkit-linear-gradient( 135deg,
+                                                     transparent,
+                                                     transparent 33%,
+                                                     rgba(0,0,0,.1) 33%,
+                                                     rgba(0,0,0,.1) 66%,
+                                                     transparent 66%),
+    -webkit-linear-gradient( top,
+                                                        rgba(255, 255, 255, .25),
+                                                        rgba(0,0,0,.2)),
+     -webkit-linear-gradient( left, #00d43f, #00ba85);
+}
+
+.color6::-webkit-progress-value
+{
+
+    background-image:
+    -webkit-linear-gradient( 135deg,
+                                                     transparent,
+                                                     transparent 33%,
+                                                     rgba(0,0,0,.1) 33%,
+                                                     rgba(0,0,0,.1) 66%,
+                                                     transparent 66%),
+    -webkit-linear-gradient( top,
+                                                        rgba(255, 255, 255, .25),
+                                                        rgba(0,0,0,.2)),
+     -webkit-linear-gradient( left, #00ba85, #00fbff);
+}
+
+.color7::-webkit-progress-value
+{
+
+    background-image:
+    -webkit-linear-gradient( 135deg,
+                                                     transparent,
+                                                     transparent 33%,
+                                                     rgba(0,0,0,.1) 33%,
+                                                     rgba(0,0,0,.1) 66%,
+                                                     transparent 66%),
+    -webkit-linear-gradient( top,
+                                                        rgba(255, 255, 255, .25),
+                                                        rgba(0,0,0,.2)),
+     -webkit-linear-gradient( left, #00fbff, #0051ff);
+}
+
+.color8::-webkit-progress-value
+{
+
+    background-image:
+    -webkit-linear-gradient( 135deg,
+                                                     transparent,
+                                                     transparent 33%,
+                                                     rgba(0,0,0,.1) 33%,
+                                                     rgba(0,0,0,.1) 66%,
+                                                     transparent 66%),
+    -webkit-linear-gradient( top,
+                                                        rgba(255, 255, 255, .25),
+                                                        rgba(0,0,0,.2)),
+     -webkit-linear-gradient( left, #0051ff, #5f00cc);
+}
+
+.color9::-webkit-progress-value
+{
+
+    background-image:
+    -webkit-linear-gradient( 135deg,
+                                                     transparent,
+                                                     transparent 33%,
+                                                     rgba(0,0,0,.1) 33%,
+                                                     rgba(0,0,0,.1) 66%,
+                                                     transparent 66%),
+    -webkit-linear-gradient( top,
+                                                        rgba(255, 255, 255, .25),
+                                                        rgba(0,0,0,.2)),
+     -webkit-linear-gradient( left, #5f00cc, #a300cc);
+}
+
+.color10::-webkit-progress-value
+{
+
+    background-image:
+    -webkit-linear-gradient( 135deg,
+                                                     transparent,
+                                                     transparent 33%,
+                                                     rgba(0,0,0,.1) 33%,
+                                                     rgba(0,0,0,.1) 66%,
+                                                     transparent 66%),
+    -webkit-linear-gradient( top,
+                                                        rgba(255, 255, 255, .25),
+                                                        rgba(0,0,0,.2)),
+     -webkit-linear-gradient( left, #a300cc, #ad0071);
 }
 
 .svgLink{
@@ -468,14 +656,15 @@ progress[value]::-moz-progress-bar {
 
 #devusText{
   width:80px;
-  fill:#BC2F95;
+  fill:#4B20E7;
   height:auto;
   margin-left: 3px;
   margin-right: 3px;
+  padding: 0.5%;
 }
 
 #devusText:hover{
-  fill:#DA2665;
+  fill:white;
 }
 
 #pdf{
@@ -487,6 +676,40 @@ progress[value]::-moz-progress-bar {
   width: 20px;
   display: inline;
 }
+
+#svg8{
+  height: 15%; 
+  width: 16%;
+  border: solid black 1px;
+  background-color: rgba(0,0,0,0.2);
+  fill:#4B20E7;
+  margin-top: 0px;
+  display:inline-block;
+  margin-left:2%;
+  margin-right:3%;
+
+}
+
+
+
+
+
+#svg9{
+  height: 14.5%; 
+  width: 15.5%;
+  border: solid black 1px;
+  background-color: rgba(0,0,0,0.2);
+  fill:#4B20E7;
+  margin-top: 0px;
+  display:inline-block;
+  margin-left:2%;
+  margin-right:3%;
+
+}
+
+
+
+
 
 
 /*Over writes*/

@@ -245,6 +245,7 @@ details[open] summary:before{
 
 
 
+
 /*for the progress bar*/
 .li1{
   width: 90%;
@@ -613,6 +614,8 @@ progress[value]::-moz-progress-bar {
 
 }
 
+
+
 #nameNavBar{
   font-variant: small-caps;
   color: rgb(233, 223, 221);
@@ -639,8 +642,8 @@ progress[value]::-moz-progress-bar {
 }
 
 #bio{
-  text-align: justify;
-  color:  rgb(112,134,150);
+  text-align: center;
+  color: rgba(255,255,255,0.7);
   font-size: 103%;
   /*text-align: center;*/
   font-family: "candara";
@@ -684,8 +687,8 @@ progress[value]::-moz-progress-bar {
 #svg8{
   height: 15%; 
   width: 16%;
-  border: solid black 1px;
-  background-color: rgba(0,0,0,0.2);
+  /*border: solid black 1px;*/
+  /*background-color: rgba(0,0,0,0.2);*/
   fill:#4B20E7;
   margin-top: 0px;
   display:inline-block;
@@ -701,8 +704,8 @@ progress[value]::-moz-progress-bar {
 #svg9{
   height: 14.5%; 
   width: 15.5%;
-  border: solid black 1px;
-  background-color: rgba(0,0,0,0.2);
+/*  border: solid black 1px;
+*/  /*background-color: rgba(0,0,0,0.2);*/
   fill:#4B20E7;
   margin-top: 0px;
   display:inline-block;

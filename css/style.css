@@ -58,19 +58,27 @@ table{
   text-align: center;
 }
 
+.internalLink:hover{
+    text-decoration-color:rgb(153,84,221,0.7) !important;
+}
 
 .navListHR{
   border-color: rgba(255,255,255,0.4) !important;
 }
 
 .social{
-  margin-top: 30px;
+  margin-top: 0px;
   display:inline-block;
-  margin-right: 2px;
-  margin-left:2px;
+  margin-left:1px;
+  margin-right:1px;
   width: 40px;
+  height:auto;
   align-content: center;
-  margin-bottom: 10px;
+  fill:#4B20E7;
+}
+
+.social:hover{
+  fill:#fedcba;
 }
 
 .socialTray{
@@ -363,11 +371,13 @@ progress[value]::-moz-progress-bar {
      -webkit-linear-gradient( left, #09c, #690);
 }
 
+.svgLink{
+  text-decoration: none !important;
+}
 
-
-
-
-
+.btn:hover #pdf{
+  fill:#ffffff;
+}
 
 
 
@@ -442,9 +452,27 @@ progress[value]::-moz-progress-bar {
   font-size: 135%;
 }
 
-#devusIcon{
+#devusText{
   width:80px;
+  fill:#BC2F95;
+  height:auto;
 }
+
+#devusText:hover{
+  fill:#DA2665;
+}
+
+#pdf{
+  fill:#17a2b8;
+}
+
+#pdfSVG{
+  height:auto;
+  width: 20px;
+  display: inline;
+}
+
+
 /*Over writes*/
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {

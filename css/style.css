@@ -24,9 +24,24 @@ table{
   margin-right: auto !important;
 }
 
+summary::-webkit-details-marker {
+  display: none
+}
 
+summary:before{
+  content: "+";
+  font-weight: bolder;
+  font-size: 20px;
+  color:#938B09;
+}
 
-
+details[open] summary:before{
+  content: "- ";
+  font-weight: bolder;
+  font-size: 20px;
+  color: #938B09;
+  width:100px;
+}
 
 /*Class Based Styling*/
 .navBar{
@@ -193,7 +208,6 @@ table{
 .li2{
   list-style-type: none;
 }
-
 
 
 

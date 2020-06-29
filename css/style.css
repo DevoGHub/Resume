@@ -238,7 +238,7 @@ details[open] summary:before{
   font-family: verdana;
   color: rgba(180, 206, 224,0.6);
 
-  
+
 }
 
 
@@ -671,7 +671,7 @@ progress[value]::-moz-progress-bar {
 }
 
 #devusText:hover{
-  fill:white;
+  fill:#fedcba;
 }
 
 #pdf{
@@ -685,7 +685,7 @@ progress[value]::-moz-progress-bar {
 }
 
 #svg8{
-  height: 15%; 
+  height: 15%;
   width: 16%;
   /*border: solid black 1px;*/
   /*background-color: rgba(0,0,0,0.2);*/
@@ -702,7 +702,7 @@ progress[value]::-moz-progress-bar {
 
 
 #svg9{
-  height: 14.5%; 
+  height: 14.5%;
   width: 15.5%;
 /*  border: solid black 1px;
 */  /*background-color: rgba(0,0,0,0.2);*/

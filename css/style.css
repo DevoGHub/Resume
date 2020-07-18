@@ -230,22 +230,6 @@ details[open] summary:before{
   list-style-type: none;
 }
 
-.footerPara{
-  /*border-top: 22px solid rgb(19, 15, 26);*/
-  padding-top: 6%;
-  font-size: 85%;
-  text-align: center;
-  font-family: verdana;
-  color: rgba(180, 206, 224,0.6);
-
-
-}
-
-
-
-
-
-
 /*for the progress bar*/
 .li1{
   width: 90%;

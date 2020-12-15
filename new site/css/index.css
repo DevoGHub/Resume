@@ -85,6 +85,7 @@ body{
   color: var(--color4);
   transition: 0.3s;
   box-shadow: 10px 12px 5px #00000029;
+  margin-top: -30px;
 }
 
 .infopanel{
@@ -95,7 +96,7 @@ body{
   width: 450px;
   border-radius: 50px;
   box-shadow: 0px 10px 15px #C94A4A9c;
-  padding-top:115px;
+  padding-top:90px;
 }
 
 #infopanelrow1{
@@ -110,6 +111,7 @@ body{
   font-size: 25px;
   margin-top: 13px;
   color: var(--color2);
+  text-shadow: 5px 5px 4px rgba(0,0,0,0.25);
 }
 
 #titlediv{
@@ -119,13 +121,62 @@ body{
   opacity: 0.7;
 }
 
+#downloadresumediv{
+  margin-top:10px;
+  padding-left: 5px;
+  font-family: 'Comic Sans MS';
+  border-style: solid;
+  border-width: 3px;
+  border-color: #0E49B5e6;
+  border-radius: 8px;;
+  width: 165px;
+  color:#0E49B5e6;
+  font-weight: bold;
+  padding-top: 0;
+  height: 30px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+#pdficon{
+  margin-top: 1px;
+  margin-left:1px;
+  width: 20px;
+  height: auto;
+}
+
+#pdficonpath{
+  fill: #0E49B5e6;
+}
+
+#resumebtntext{
+  padding-top: 3px;
+  margin-left: -15px;
+}
+
+#downloadresumediv:hover{
+  background-color: #0e49b5e6;
+  transition: 0.1s;
+  color: var(--white);
+  border-color:var(--white);
+  font-weight: normal;
+}
+
+#downloadresumediv:hover #pdficonpath{
+  fill: var(--white);
+}
+
 #profileimgdiv{
-  padding-left: 25px;
+  padding-left: 15px;
 }
 
 #profileimg{
-  width: 100px;
-  border-radius: 50px;
+  margin-top: 13px;
+  width: 110px;
+  height: 110px;
+  border-radius: 56px;
   box-shadow: 5px 5px 5px #5A567599;
 }
 
@@ -134,7 +185,7 @@ body{
   background-color: var(--color2);
   border-style: none;
   opacity: 0.85;
-  height: 1px;
+  height: 2px;
 }
 
 #infopanelrow2{
@@ -145,4 +196,67 @@ body{
   font-family: "Comic Sans MS";
   font-size:13.5px;
   color: var(--color2);
+  margin-bottom: 15px;
+}
+
+#socialtray{
+  padding-top: 23px;
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+  padding-left: 28px;
+  padding-right: 4px;
+}
+
+.socialicondiv{
+  padding: 0;
+  margin:0;
+}
+
+.socialicon{
+  height: 30px;
+  width: 30px;
+  transition: 0.2s;
+}
+
+.socialicon path{
+  fill:var(--color1);
+  transition: 0.2s;
+}
+
+.socialicondiv:hover .socialicon path{
+  fill:#C94A4A;
+  transition: 0.2s;
+}
+
+.socialicondiv:hover .socialicon{
+  height: 38px;
+  width: 38px;
+  margin-top:-8px;
+  transition: 0.2s;
+}
+
+#devuspanel{
+  margin-top: 50px;
+  margin-left: 275px;
+  color: #E86666;
+  font-family: "Comic Sans MS";
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#devustext{
+  height: 15px;
+  width: auto;
+}
+
+#devustextpath{
+  fill:#E86666;
+  box-shadow: 3px 3px 4px;
+  transition: 0.2s;
+}
+
+#devustextdiv:hover #devustextpath{
+  fill:var(--black);
+  transition: 0.2s;
 }

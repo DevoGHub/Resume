@@ -155,7 +155,7 @@
                 </svg>
               </div>
               <div id="resumebtntext">
-                Download Resume
+                View/Download Resume
               </div>
             </div>
         </div>
@@ -757,5 +757,6 @@
         personal
       </div>
     </div>
+    <iframe src="education.php"></iframe>
   </body>
 </html>

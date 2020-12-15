@@ -34,7 +34,6 @@ html,body{
 
 body{
   padding-left: 75px;
-  padding-right: 75px;
   padding-top: 55px;
   background-color: var(--color4);
   overflow: auto;
@@ -103,7 +102,7 @@ body{
   display: grid;
   grid-template-columns: 2fr 1fr;
   padding-left: 28px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 #namediv{
@@ -129,7 +128,7 @@ body{
   border-width: 3px;
   border-color: #0E49B5e6;
   border-radius: 8px;;
-  width: 165px;
+  width: 219px;
   color:#0E49B5e6;
   font-weight: bold;
   padding-top: 0;
@@ -153,7 +152,7 @@ body{
 
 #resumebtntext{
   padding-top: 3px;
-  margin-left: -15px;
+  margin-left: -20px;
 }
 
 #downloadresumediv:hover{
@@ -189,14 +188,14 @@ body{
 }
 
 #infopanelrow2{
-  margin-top:2px;
+  margin-top:7px;
   margin-right: 25px;
   margin-left:20px;
   text-align: center;
   font-family: "Comic Sans MS";
   font-size:13.5px;
   color: var(--color2);
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 #socialtray{
@@ -259,4 +258,14 @@ body{
 #devustextdiv:hover #devustextpath{
   fill:var(--black);
   transition: 0.2s;
+}
+
+iframe{
+  margin-left: 500px;
+  margin-top:85px;
+  height: 495px;
+  width: 880px;
+  overflow-x: auto;
+  overflow-y: auto;
+  border: 5px solid #707070;
 }

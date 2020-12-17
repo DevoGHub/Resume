@@ -1,3 +1,4 @@
+<?php require(__DIR__.'/../config/conn.php') ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>

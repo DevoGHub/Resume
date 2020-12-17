@@ -9,6 +9,7 @@
 
 body{
   padding-left: 75px;
+  padding-right: 75px;
   padding-top: 55px;
   background-color: var(--color4);
   overflow: auto;
@@ -233,14 +234,4 @@ body{
 #devustextdiv:hover #devustextpath{
   fill:var(--black);
   transition: 0.2s;
-}
-
-iframe{
-  margin-left: 500px;
-  margin-top:85px;
-  height: 505px;
-  width: 890px;
-  overflow-x: auto;
-  overflow-y: auto;
-  border: 5px solid #707070;
 }

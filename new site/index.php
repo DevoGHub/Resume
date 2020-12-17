@@ -1,4 +1,4 @@
-<?php require(__DIR__.'/../config/conn.php') ?>
+<?php require(__DIR__.'/../config/resume_conn.php') ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -760,6 +760,5 @@
         personal
       </div>
     </div>
-    <iframe src="education.php"></iframe>
   </body>
 </html>

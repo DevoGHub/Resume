@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Devjyot Singh Sidhu</title>
+    <link rel="icon" href="imgs/D LOGO.ico">
+    <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/index.css">
   </head>
   <body>

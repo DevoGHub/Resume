@@ -7,31 +7,6 @@
   --black:#000;
 }
 
-@font-face {
-  font-family: "Dancing Script";
-  src: url(../fonts/dancingscript.ttf);
-}
-
-@font-face {
-  font-family: "Indie Flower";
-  src: url(../fonts/indieflower.ttf);
-}
-
-@font-face {
-  font-family: "Abril Fatface";
-  src: url(../fonts/abrilfatface.ttf);
-}
-
-@font-face {
-  font-family: "Comic Sans MS";
-  src: url(../fonts/comicsnasms/comic.ttf);
-}
-
-html,body{
-  padding:0;
-  margin:0;
-}
-
 body{
   padding-left: 75px;
   padding-top: 55px;
@@ -263,8 +238,8 @@ body{
 iframe{
   margin-left: 500px;
   margin-top:85px;
-  height: 495px;
-  width: 880px;
+  height: 505px;
+  width: 890px;
   overflow-x: auto;
   overflow-y: auto;
   border: 5px solid #707070;

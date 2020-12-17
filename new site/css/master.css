@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Dancing Script";
+  src: url(../fonts/dancingscript.ttf);
+}
+
+@font-face {
+  font-family: "Indie Flower";
+  src: url(../fonts/indieflower.ttf);
+}
+
+@font-face {
+  font-family: "Abril Fatface";
+  src: url(../fonts/abrilfatface.ttf);
+}
+
+@font-face {
+  font-family: "Comic Sans MS";
+  src: url(../fonts/comicsansms/comic.ttf);
+}
+
+html,body{
+  padding:0;
+  margin:0;
+}

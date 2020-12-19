@@ -1,1 +1,4 @@
 resources/
+mpdf/
+composer.json
+composer.lock

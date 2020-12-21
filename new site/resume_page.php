@@ -10,35 +10,75 @@ $skills=mysqli_query($con,'select * FROM skills order by type;');
 $certifications=mysqli_query($con,'select * FROM certifications order by id desc limit 4;');
 $additional=mysqli_query($con,'select * FROM additional;');
 
+
+$defaultConfig = (new Mpdf\Config\ConfigVariables())->getDefaults();
+$fontDirs = $defaultConfig['fontDir'];
+
+$defaultFontConfig = (new Mpdf\Config\FontVariables())->getDefaults();
+$fontData = $defaultFontConfig['fontdata'];
+
+$mpdf = new \Mpdf\Mpdf([
+    'fontDir' => array_merge($fontDirs, [
+        __DIR__ . '/fonts/calibri',
+    ]),
+    'fontdata' => $fontData + [
+        'calibri' => [
+            'R' => 'calibri.ttf',
+            'I' => 'calibrii.ttf',
+        ]
+    ],
+    'default_font' => 'calibri'
+]);
+
 $html.="<style>
 table{
   width: 100%;
   margin:0;
-  padding:0
+  padding:0;
 }
 
 body{
   font-size:13px;
 }
 
+tr{
+  border:1px solid black;
+}
+
 th,td{
-  padding:0
+  padding:0;
   margin:0;
-  vertical-align:middle;
+  vertical-align:top;
   text-align:left;
   width:50%;
+  text-align:justify;
+}
+
+td{
+  margin-top:100px;
+}
+
+.left{
+  font-weight:bold;
+  font-size:15px;
+}
+
+a{
+  text-decoration:none;
+  font-style:oblique;
+  color:#7F0DD1;
 }
 </style><body>
-<table>
+<table style='border-collapse: separate;border-spacing: 0 30px;'>
   <tr>
-    <th>Devjyot Singh Sidhu</th>
-    <th>devjyotsinhsidhu@gmail.com<br>
-      +919818911553
+    <th style='font-size:18px;color:#0D6ED1;text-decoration:underline;'>Devjyot Singh Sidhu</th>
+    <th style='text-align:right;'><a href='mailto:devjyotsinhsidhu@gmail.com' style='color:#499E60;'>devjyotsinhsidhu@gmail.com</a><br>
+      <a href='tel:+919818911553' style='color:#D25EBB;'>+919818911553</a>
     </th>
   </tr>
   <br><br>
   <tr>
-    <td>Goal in Life</td>
+    <td class='left'>Goal in Life</td>
     <td>I’m a tech enthusiast who has the dream to
         explore the very limits of Machine Learning and
         Artificial Intelligence and achieve something
@@ -49,12 +89,12 @@ th,td{
   </tr>
   <br><br>
   <tr>
-    <td>Education</td>
+    <td class='left'>Education</td>
     <td>";
     $num=mysqli_num_rows($education);
     while($row=mysqli_fetch_assoc($education)){
       $num--;
-      $html.=$row['institute']." '".substr($row['graduation_year'],2).'<br>'.$row['degree'].'<br>';
+      $html.='<b>'.$row['institute']." '".substr($row['graduation_year'],2).'</b><br><u>'.$row['degree'].'</u><br>';
       if($row['score']<0){
         $html.='Currently Enrolled';
       }
@@ -69,17 +109,17 @@ th,td{
   </tr>
   <br><br>
   <tr>
-    <td>Work Experience<br>and Positions of Responsibilities</td>
+    <td class='left'>Work Experience<br>and Positions of Responsibilities</td>
     <td>";
     $num=mysqli_num_rows($work);
     while($row=mysqli_fetch_assoc($work)){
       $num--;
-      $html.=$row['post'].' at '.$row['organisation'].'<br>'.$row['start_month'].'-';
+      $html.='<b>'.$row['post'].' at '.$row['organisation'].'</b><br><u>'.$row['start_month'].'-';
       if($row['end_month']==-1){
-        $html.='present';
+        $html.='present</u>';
       }
       else{
-        $html.=$row['end_month'];
+        $html.=$row['end_month'].'</u>';
       }
       if($row['certificate']!=null){
         $html.="<br><a href='".$row['certificate']."'>Reference Certificate</a>";
@@ -92,12 +132,12 @@ th,td{
   </tr>
   <br><br>
   <tr>
-    <td>Certifications</td>
+    <td class='left'>Certifications</td>
     <td>";
     $num=mysqli_num_rows($certifications);
     while($row=mysqli_fetch_assoc($certifications)){
       $num--;
-      $html.=$row['platform'].' and '.$row['issuer'].'<br>'.$row['title'].'<br><a href="'.$row['link'].'">Reference Certificate</a>';
+      $html.='<b>'.$row['platform'].' and '.$row['issuer'].'</b><br>'.$row['title'].'<br><a href="'.$row['link'].'">Reference Certificate</a>';
       if($num>=1){
         $html.='<br><br>';
       }
@@ -106,17 +146,17 @@ th,td{
   </tr>
   <br><br>
   <tr>
-    <td>Skils</td>
+    <td class='left'>Skils</td>
     <td>
       <table>";
       $num=mysqli_num_rows($skills);
       while($row=mysqli_fetch_assoc($skills)){
         $num--;
         if($num%2!=0){
-          $html.="<tr><td>".$row['name'].'<br>'.$row['rating'].'</td>';
+          $html.="<tr><td style='padding-right:30px;text-align:left;'><b>".$row['name'].'</b><br>'.$row['rating'].'</td>';
         }
         else{
-          $html.="<td>".$row['name'].'<br>'.$row['rating'].'</td></tr>';
+          $html.="<td style='text-align:left;'><b>".$row['name'].'</b><br>'.$row['rating'].'</td></tr>';
         }
         if($num>=1){
           $html.='<br><br>';
@@ -127,16 +167,16 @@ th,td{
   </tr>
   <br><br>
   <tr>
-    <td>Miscellaneous Information</td>
+    <td class='left'>Miscellaneous Information</td>
     <td>";
     $num=mysqli_num_rows($additional);
     while($row=mysqli_fetch_assoc($additional)){
       $num--;
       if($row['link']!=null){
-        $html.='<a href="'.$row['link'].'">'.$row['title'].'</a><br>'.$row['description'];
+        $html.='<b><a href="'.$row['link'].'">'.$row['title'].'</a></b><br>'.$row['description'];
       }
       else{
-        $html.=$row['title'].'<br>'.$row['description'];
+        $html.='<b>'.$row['title'].'</b><br>'.$row['description'];
       }
       if($num>=1){
         $html.='<br><br>';
@@ -149,6 +189,6 @@ th,td{
 $mpdf=new Mpdf\Mpdf();
 $mpdf->setTitle('Devjyot Singh Sidhu_Resume');
 $mpdf->writeHTML($html);
-$file='Devjyot Singh Sidhu_Resume';
+$file='Devjyot Singh Sidhu_Resume.pdf';
 $mpdf->output($file,'I');
 ?>

@@ -10,6 +10,8 @@ $skills=mysqli_query($con,'select * FROM skills order by type;');
 $certifications=mysqli_query($con,'select * FROM certifications order by id desc limit 4;');
 $additional=mysqli_query($con,'select * FROM additional;');
 
+$a=array('#0D6ED1','#9F6809','#86BD54','#09BDAE','#BD0981','#0FBD09','#BC0D0D');
+$rand=array_rand($a);
 
 $defaultConfig = (new Mpdf\Config\ConfigVariables())->getDefaults();
 $fontDirs = $defaultConfig['fontDir'];
@@ -71,7 +73,7 @@ a{
 </style><body>
 <table style='border-collapse: separate;border-spacing: 0 30px;'>
   <tr>
-    <th style='font-size:18px;color:#0D6ED1;text-decoration:underline;'>Devjyot Singh Sidhu</th>
+    <th style='font-size:18px;color:".$a[$rand].";text-decoration:underline;'>Devjyot Singh Sidhu</th>
     <th style='text-align:right;'><a href='mailto:devjyotsinhsidhu@gmail.com' style='color:#499E60;'>devjyotsinhsidhu@gmail.com</a><br>
       <a href='tel:+919818911553' style='color:#D25EBB;'>+919818911553</a>
     </th>

@@ -98,7 +98,7 @@ a{
       $num--;
       $html.='<b>'.$row['institute']." '".substr($row['graduation_year'],2).'</b><br><u>'.$row['degree'].'</u><br>';
       if($row['score']<0){
-        $html.='Currently Enrolled';
+        $html.='Not Yet Declared';
       }
       else{
         $html.=$row['score'].' ('.$row['mode'].')';

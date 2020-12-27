@@ -72,21 +72,31 @@ require(__DIR__.'/../config/resume_conn.php');
              fill="#0E49B5" />
         </g>
       </svg>
-      <div class="navbtn activenavbtn">
-        Education
-      </div>
-      <div class="navbtn">
-        Work Experience
-      </div>
-      <div class="navbtn">
-        Skills
-      </div>
-      <div class="navbtn">
-        Certifications
-      </div>
-      <div class="navbtn">
-        Projects
-      </div>
+      <a href="#education">
+        <div class="navbtn activenavbtn">
+          Education
+        </div>
+      </a>
+      <a href="#workexperience">
+        <div class="navbtn">
+          Work Experience
+        </div>
+      </a>
+      <a href='#skills'>
+        <div class="navbtn">
+          Skills
+        </div>
+      </a>
+      <a href="#certifications">
+        <div class="navbtn">
+          Certifications
+        </div>
+      </a>
+      <a href="#projects">
+        <div class="navbtn">
+          Projects
+        </div>
+      </a>
     </div>
     <div class="infopanel">
       <div id="infopanelrow1">
@@ -761,6 +771,73 @@ require(__DIR__.'/../config/resume_conn.php');
           </div>
         </a>
         personal
+      </div>
+    </div>
+    <div id="mainpanel">
+      <div id="education" class='sectiondiv'>
+        <div class="sectiontitle">
+          Education
+        </div><br>
+        <div id="educationdiv" class='infodiv'>
+          I've done most of my schooling in the National Capital Territory of Delhi. I started my schooling in Gurugram (formerly known as Gurgaon), shifetd to Kanpur for sometime and then completed the rest in New Delhi and Noida.  I'm currently pursuing B.Tech in Computer Science and Engineering at Vellore Institute of Technology, Vellore. Below is a tabulated form of all my major degrees:
+          <table style="margin-top:10px;">
+            <tr>
+              <th>Institute</th>
+              <th>Degree</th>
+              <th>Year of Graduation</th>
+              <th>Score</th>
+            </tr>
+            <?php
+            $con=mysqli_connect($host,$user,$pass,$dbname) or die('An error while fetching data from database');
+            $education=mysqli_query($con,'select * from education order by id desc;');
+            while($row=mysqli_fetch_assoc($education)){
+              echo "<tr>
+                      <td>".$row['institute']."</td>
+                      <td>".$row['degree']."</td>
+                      <td style='text-align:center;'>".$row['graduation_year']."</td>";
+                      if($row['score']<0){
+                        echo "<td style='text-align:center;'>Not Yet Declared</td>";
+                      }
+                      else{
+                        echo "<td style='text-align:center;'>".$row['score'].' ('.$row['mode'].")</td>";
+                      }
+              echo "</tr>";
+            }
+            ?>
+          </table>
+        </div>
+      </div>
+      <div id="workexperience" class='sectiondiv'>
+        <div class="sectiontitle">
+          Work Experience
+        </div><br>
+        <div class="infodiv" id='workexpdiv'>
+
+        </div>
+      </div>
+      <div id="skills" class='sectiondiv'>
+        <div class="sectiontitle">
+          Skills
+        </div><br>
+        <div class="infodiv" id='skillsdiv'>
+
+        </div>
+      </div>
+      <div id="certifications" class='sectiondiv'>
+        <div class="sectiontitle">
+          Certifications
+        </div><br>
+        <div class="infodiv" id='certificationsdiv'>
+
+        </div>
+      </div>
+      <div id="projects" class='sectiondiv'>
+        <div class="sectiontitle">
+          Projects
+        </div><br>
+        <div class="infodiv" id='projectdiv'>
+
+        </div>
       </div>
     </div>
   </body>
